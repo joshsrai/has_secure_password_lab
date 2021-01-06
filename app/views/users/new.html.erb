@@ -1,0 +1,10 @@
+<%= form_for :user, url: '/users' do |f| %>
+  Username: <%= f.text_field :name %>
+  Password: <%= f.password_field :password %>
+  Password Confirmation: <%= f.password_field :password_confirmation %>
+  <%= f.submit "Submit" %>
+<% end %> 
+
+<!-- Create a Users controller.
+# It should respond to #new with the signup form,
+# and respond to #create by creating a new user. -->
